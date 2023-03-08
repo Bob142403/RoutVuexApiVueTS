@@ -34,13 +34,13 @@ export const commentsModule: Module<CommentsState, State> = {
     userInfo: { name: "", id: 0 },
   },
   mutations: {
-    setComments(state, comments) {
+    setComments(state, comments: Comments[]) {
       state.comments = comments;
     },
-    setPostInfo(state, postInfo) {
+    setPostInfo(state, postInfo: Post) {
       state.postInfo = postInfo;
     },
-    setUserInfo(state, userInfo) {
+    setUserInfo(state, userInfo: User) {
       state.userInfo = userInfo;
     },
   },

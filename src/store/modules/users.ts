@@ -16,8 +16,8 @@ export const usersModule: Module<UsersState, State> = {
     },
   },
   mutations: {
-    setUsers(state, payload) {
-      state.users = payload;
+    setUsers(state, users: User[]) {
+      state.users = users;
     },
   },
   state: (): UsersState => ({

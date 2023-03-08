@@ -16,7 +16,7 @@ export const postsModule: Module<PostsState, State> = {
     },
   },
   mutations: {
-    setPosts(state, posts) {
+    setPosts(state, posts: Post[]) {
       state.posts = posts;
     },
   },
